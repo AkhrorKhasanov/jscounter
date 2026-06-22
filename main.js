@@ -15,7 +15,9 @@ btns.forEach(function (btn) {
             count = 0;
         }
 
-        // I need to change button colors here...
+        if (count > 0) value.style.color = "green";
+        if (count < 0) value.style.color = "red";
+        if (count === 0) value.style.color = "#333";
 
         value.textContent = count;
     });
